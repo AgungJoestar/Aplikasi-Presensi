@@ -1,0 +1,43 @@
+{
+    "name": "yugo/smsgateway",
+    "description": "SMS gateway for Laravel using various vendors (SMSGateway.me, Zenziva, etc)",
+    "keywords": [
+        "smsgateway",
+        "laravel",
+        "sms"
+    ],
+    "homepage": "https://github.com/arvernester/smsgateway",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Dedy Yugo Purwanto",
+            "email": "dedy.yugo.purwanto@gmail.com",
+            "homepage": "https://laravel.web.id",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.4",
+        "mashape/unirest-php": "3.0.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.1.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "Yugo\\SMSGateway": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yugo\\SMSGateway\\Providers\\SmsServiceProvider"
+            ]
+        }
+    },
+    "support": {
+        "email": "dedy.yugo.purwanto@gmail.com"
+    }
+}
